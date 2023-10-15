@@ -75,6 +75,7 @@ public class TelaJogo extends javax.swing.JFrame {
         String textoSaida = (numUsuario == valor)? acertou : errou; // Lógica errou ou acertou o número sorteado 
          
         txtSaida.setText(textoSaida); // Usuario recebe a informação se errou ou acertou
+        System.out.println("");
     }//GEN-LAST:event_btnJogarActionPerformed
 
     public static void main(String args[]) {
