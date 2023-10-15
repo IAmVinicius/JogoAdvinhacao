@@ -31,11 +31,11 @@ public class TelaJogo extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(218, 211, 238));
         jLabel2.setText("ADVINHE O NÚMERO DE 1 A 5");
         jLabel2.setToolTipText("");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 160, 304, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 160, 304, -1));
 
         txtValor.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         txtValor.setModel(new javax.swing.SpinnerNumberModel(1, 1, 5, 1));
-        getContentPane().add(txtValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(448, 208, 80, -1));
+        getContentPane().add(txtValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 208, 80, -1));
 
         btnJogar.setBackground(new java.awt.Color(153, 0, 0));
         btnJogar.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
@@ -47,7 +47,7 @@ public class TelaJogo extends javax.swing.JFrame {
                 btnJogarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJogar, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 272, 144, 32));
+        getContentPane().add(btnJogar, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 272, 144, 32));
 
         txtSaida.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         txtSaida.setForeground(new java.awt.Color(212, 205, 233));
@@ -56,9 +56,9 @@ public class TelaJogo extends javax.swing.JFrame {
         txtSaida.setFocusable(false);
         txtSaida.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         txtSaida.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(txtSaida, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 320, 208, 80));
+        getContentPane().add(txtSaida, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 320, 208, 80));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/projeto jogo copiar.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/telaJogo1.1.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -16, 720, 496));
 
         pack();
@@ -70,7 +70,7 @@ public class TelaJogo extends javax.swing.JFrame {
         int valor = (int) n; // Recebe o número inteiro sorteado                
         int numUsuario = (int) txtValor.getValue(); // Recebe o númeor informado do usuario
         String acertou = "<html>Acertou na mosca</html>";
-        String errou = "<html>Que pena você errou!      O número sorteado foi o " + valor + " </html>";
+        String errou = "<html>Que pena você errou! Sorteamos o número " + valor + " </html>";
         
         String textoSaida = (numUsuario == valor)? acertou : errou; // Lógica errou ou acertou o número sorteado 
          
